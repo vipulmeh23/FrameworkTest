@@ -1,3 +1,9 @@
+# IntelliJ
+.idea
+*.ipr
+*.iml
+*.iws
 # Default ignored files
 /shelf/
 /workspace.xml
+
