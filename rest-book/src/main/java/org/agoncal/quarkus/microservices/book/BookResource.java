@@ -26,7 +26,7 @@ public class BookResource {
     @POST
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
-    @Retry(maxRetries = 3, maxDuration = 2000) // waits for number resource for 3 * 2000 seconds
+    @Retry(maxRetries = 3, maxDuration = 3000) // waits for number resource for 3 * 2000 seconds
     @Fallback(fallbackMethod = "fallingBackOnCreatingABook")
     public Response createBook(
             @FormParam("title") String title,
